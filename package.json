@@ -1,0 +1,43 @@
+{
+  "name": "fe-recap",
+  "version": "1.0.0",
+  "description": "Recap FE course",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --mode development --watch",
+    "start": "npx webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6e3veR6k/fe-recap.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "6e3veR6uk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/6e3veR6k/fe-recap/issues"
+  },
+  "homepage": "https://github.com/6e3veR6k/fe-recap#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.1.0",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}
