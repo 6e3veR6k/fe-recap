@@ -1,10 +1,6 @@
 @import "../../node_modules/normalize-scss/sass/normalize";
-
-
-
 @include normalize();
-
-
-.main-page-title {
-  background-color: rgb(225, 31, 31);
-}
+@import "./utils/common";
+@import "./fonts";
+@import "./variables";
+@import "./style";

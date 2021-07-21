@@ -39,7 +39,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -65,11 +65,27 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader'],
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[contenthash].[ext]',
+                            outputPath: 'imgs',
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader'],
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[contenthash].[ext]',
+                            outputPath: 'fonts',
+                        },
+                    },
+                ],
             },
         ],
     },

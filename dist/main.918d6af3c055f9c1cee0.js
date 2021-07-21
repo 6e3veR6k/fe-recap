@@ -20,23 +20,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./scripts/app-module1.js":
-/*!********************************!*\
-  !*** ./scripts/app-module1.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Person\": () => (/* binding */ Person)\n/* harmony export */ });\n\r\n\r\nclass Person {\r\n    constructor(firstName, secondName, lastName) {\r\n        this.firstName = firstName;\r\n        this.lastName = lastName;\r\n        this.secondName = secondName;\r\n    }\r\n\r\n    getFullName() {\r\n        return ` ${this.lastName} ${this.firstName} ${this.secondName}`;\r\n    }\r\n    і;\r\n    toString() {\r\n        return JSON.stringify({\r\n            fName: this.firstName,\r\n            lName: this.lastName,\r\n            sName: this.secondName,\r\n        });\r\n    }\r\n}\r\n\r\n// дата, вес, размер грудной клетки, талия, пресс, бедра, нога, игра, рука\r\n\n\n//# sourceURL=webpack:///./scripts/app-module1.js?");
-
-/***/ }),
-
 /***/ "./scripts/index.js":
 /*!**************************!*\
   !*** ./scripts/index.js ***!
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scripts_app_module1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @scripts/app-module1 */ \"./scripts/app-module1.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/main.scss */ \"./styles/main.scss\");\n\r\n\r\n\r\n\r\n\r\nconst first = new _scripts_app_module1__WEBPACK_IMPORTED_MODULE_0__.Person('Dmytro', 'Olexandrovich', 'Bezvershuk');\r\n\r\nconst value = first.getFullName();\r\n\r\nconsole.log(value);\r\nconsole.log(first.toString());\r\nconsole.log('all works fine');\r\n\n\n//# sourceURL=webpack:///./scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/main.scss */ \"./styles/main.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./scripts/index.js?");
 
 /***/ })
 
@@ -67,23 +57,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scr
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

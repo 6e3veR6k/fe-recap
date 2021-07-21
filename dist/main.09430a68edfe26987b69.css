@@ -452,6 +452,72 @@ template {
   display: none;
 }
 
-.main-page-title {
-  background-color: #e11f1f;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: inherit;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "OpenSansR";
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans Regular"), local("OpenSans-Regular"), url(./dist/styles/b03be35d34e3031f3d9e.ttf) format("truetype");
+}
+:root {
+  --main-font-family: "OpenSansR", sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-family: var(--main-font-family);
+}
+
+.container {
+  width: 32rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
